@@ -1,18 +1,24 @@
 public class Main {
-  public static void main(String[] args) {
-    System.out.println("Hello, Tim");
 
-    boolean isAlien = false;
-    if (isAlien == false) {
-      System.out.println("It is not an alien!");
-      System.out.println("And I am scared of aliens");
+    public static void main(String[] args) {
+
+        Car car = new Car();
+        car.setMake("Porsche");
+        car.setModel("Carrera");
+        car.setDoors(2);
+        car.setConvertible(true);
+        car.setColor("black");
+        System.out.println("make = " + car.getMake());
+        System.out.println("model = " + car.getModel());
+        car.describeCar();
+
+        Car targa = new Car();
+        targa.setMake("Porsche");
+        targa.setModel("Targa");
+        targa.setDoors(2);
+        targa.setConvertible(false);
+        targa.setColor("red");
+
+        targa.describeCar();
     }
-
-//    int[] arrayInt = new int[] {0,1,2,3,4,5,6,7,8,9};
-//
-//    for (int i = 0; i < arrayInt.length; i++) {
-//      System.out.print( i==0 ? i : ", " + i);
-//    }
-
-  }
 }
